@@ -1,25 +1,105 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from "./styles/App.module.css";
+const ilustration =
+  require("./assets/illustration-woman-online-desktop.svg").default;
+
+const ilustrationBox = require("./assets/illustration-box-desktop.svg").default;
+const cardBG = require("./assets/bg-pattern-desktop.svg").default;
 
 function App() {
+  const {
+    container,
+    card,
+    leftContainer,
+    boxWrapper,
+    cardContent,
+    faqs,
+    faqContainer,
+    title,
+    attribution,
+  } = styles;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+    <>
+      <main className={container}>
+        <div className={card}>
+          <div className={boxWrapper}>
+            <img src={ilustrationBox} alt="ilustration" />
+            <div className={cardContent}>
+              <div className={leftContainer}>
+                <img src={cardBG} alt="background" />
+                <img src={ilustration} alt="ilustration" />
+              </div>
+
+              <div className={faqContainer}>
+                <h1 className={title}>FAQ</h1>
+                <div className={faqs}>
+                  <details>
+                    <div>
+                      {" "}
+                      You can invite up to 2 additional users on the Free plan.
+                      There is no limit on team members for the Premium plan.
+                    </div>
+                    <summary>How many team members can I invite?</summary>
+                  </details>
+                  <details>
+                    <div>
+                      {" "}
+                      No more than 2GB. All files in your account must fit your
+                      allotted storage space.
+                    </div>
+                    <summary>What is the maximum file upload size?</summary>
+                  </details>
+                  <details>
+                    <div>
+                      {" "}
+                      Click “Forgot password” from the login page or “Change
+                      password” from your profile page. A reset link will be
+                      emailed to you.
+                    </div>
+                    <summary>How do I reset my password?</summary>
+                  </details>
+                  <details>
+                    <div>
+                      {" "}
+                      Yes! Send us a message and we’ll process your request no
+                      questions asked.
+                    </div>
+                    <summary>Can I cancel my subscription?</summary>
+                  </details>
+                  <details>
+                    <div>
+                      {" "}
+                      Chat and email support is available 24/7. Phone lines are
+                      open during normal business hours.
+                    </div>
+                    <summary>Do you provide additional support?</summary>
+                  </details>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer className={attribution}>
+        Challenge by{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
-          Learn React
+          Frontend Mentor
         </a>
-      </header>
-    </div>
+        . Coded by{" "}
+        <a
+          href="https://www.linkedin.com/in/luispintodev/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Luís Pinto
+        </a>
+        .
+      </footer>
+    </>
   );
 }
 

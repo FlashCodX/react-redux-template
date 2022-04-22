@@ -1,0 +1,172 @@
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  position: relative;
+  display: grid;
+  margin: 0 20px;
+  width: 1000px;
+  height: 600px;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+}
+
+.boxWrapper{
+  height: inherit;
+position: relative;
+display: flex;
+align-items: center;
+}
+
+
+
+.boxWrapper > img{
+  position: absolute;
+  z-index: 1000;
+  top: 40%;
+  left: -100px;
+}
+
+
+.cardContent {
+  display: grid;
+  width: 100%;
+  height: inherit;
+  grid-template-columns: repeat(2,1fr);
+}
+
+
+.leftContainer{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.leftContainer > img{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: -50px;
+  margin: auto;
+
+}
+
+.faqContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 2.5rem;
+  align-self: flex-start;
+}
+
+details{
+  border-bottom: 1px solid rgba(85, 85, 85, 0.1);
+}
+
+summary{
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
+summary::after{
+  content: url('../assets/icon-arrow-down.svg');
+}
+
+details[open] summary{
+  font-weight: bold;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+summary:hover{
+  color: orange;
+}
+
+.faqs{
+  margin-top: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+flex-direction: column;
+}
+
+.attribution{
+  position: absolute;
+  bottom: 6px;
+  display: flex;
+  width: fit-content;
+  font-size: 1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-weight: 700;
+  color: white;
+}
+.attribution *{
+  margin: auto 5px;
+}
+
+.attribution a{
+  color: red;
+  font-weight:900;
+  text-decoration: none;
+}
+
+
+@media (max-width:768px) {
+  .cardContent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .leftContainer{
+    overflow: visible;
+  }
+
+  .leftContainer > img {
+width: 300px;
+top: -150px;
+content: url('../assets/illustration-woman-online-mobile.svg');
+margin: auto;
+left: 0;
+right: 0;
+  }
+
+.title{
+  margin: auto;
+}
+
+  .faqContainer{
+    height: 500px;
+    overflow: scroll;
+    width: 90%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+  }
+
+  .faqContainer::-webkit-scrollbar{
+    width: 0;
+  }
+
+
+  .boxWrapper > img{
+    display: none;
+  }
+}
