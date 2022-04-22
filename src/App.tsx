@@ -28,50 +28,49 @@ function App() {
                 <img src={cardBG} alt="background" />
                 <img src={ilustration} alt="ilustration" />
               </div>
-
               <div className={faqContainer}>
                 <h1 className={title}>FAQ</h1>
                 <div className={faqs}>
                   <details>
+                    <summary>How many team members can I invite?</summary>
                     <div>
                       {" "}
                       You can invite up to 2 additional users on the Free plan.
                       There is no limit on team members for the Premium plan.
                     </div>
-                    <summary>How many team members can I invite?</summary>
                   </details>
                   <details>
+                    <summary>What is the maximum file upload size?</summary>
                     <div>
                       {" "}
                       No more than 2GB. All files in your account must fit your
                       allotted storage space.
                     </div>
-                    <summary>What is the maximum file upload size?</summary>
                   </details>
                   <details>
+                    <summary>How do I reset my password?</summary>
                     <div>
                       {" "}
                       Click “Forgot password” from the login page or “Change
                       password” from your profile page. A reset link will be
                       emailed to you.
                     </div>
-                    <summary>How do I reset my password?</summary>
                   </details>
                   <details>
+                    <summary>Can I cancel my subscription?</summary>
                     <div>
                       {" "}
                       Yes! Send us a message and we’ll process your request no
                       questions asked.
                     </div>
-                    <summary>Can I cancel my subscription?</summary>
                   </details>
                   <details>
+                    <summary>Do you provide additional support?</summary>
                     <div>
                       {" "}
                       Chat and email support is available 24/7. Phone lines are
                       open during normal business hours.
                     </div>
-                    <summary>Do you provide additional support?</summary>
                   </details>
                 </div>
               </div>
