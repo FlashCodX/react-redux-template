@@ -1,108 +1,143 @@
 .container{
   min-height: 100vh;
+}
+
+
+.backgroundContainer{
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.backgroundContainer > img{
+  object-fit: contain;
+  width: 100%;
+}
+
+
+.pageContent{
+  min-height: inherit;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card{
-  position: relative;
-  display: grid;
-  margin: 0 20px;
-  width: 1000px;
-  height: 600px;
-  align-items: center;
-  background: white;
-  border-radius: 30px;
-}
-
-.boxWrapper{
-  height: inherit;
-position: relative;
-display: flex;
-align-items: center;
-}
-
-
-
-.boxWrapper > img{
-  position: absolute;
-  z-index: 1000;
-  top: 40%;
-  left: -100px;
-}
-
-
-.cardContent {
-  display: grid;
-  width: 100%;
-  height: inherit;
-  grid-template-columns: repeat(2,1fr);
-}
-
-
-.leftContainer{
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.leftContainer > img{
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  left: -50px;
+  gap: 50px;
+  max-width: 1100px;
   margin: auto;
-
-}
-
-.faqContainer{
-  width: 100%;
-  display: flex;
+  position: relative;
   justify-content: space-between;
-  padding: 50px 0;
-  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
-.title{
-  font-size: 2.5rem;
-  align-self: flex-start;
+
+.pageInfo{
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
 
-details{
-  border-bottom: 1px solid rgba(85, 85, 85, 0.1);
+.pageInfo > h1{
+  font-size: 2.7rem;
+  max-width: 400px;
 }
 
-summary{
-  padding: 10px 0;
-  cursor: pointer;
+.pageInfo > p{
+  font-size: 1rem;
+  max-width: 500px;
+}
+
+
+.trialContainer{
+  width: 100%;
+  max-width: 550px;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 30px;
 }
 
-summary::after{
-  content: url('../assets/icon-arrow-down.svg');
+.trialContainer > header{
+  font-size: 1rem;
+  padding: 20px 20px;
+  border-radius: 10px;
+  text-align: center;
+  background: hsl(248, 32%, 49%);
 }
 
-details[open] summary{
+
+.trialContainer > header > div > h1{
   font-weight: bold;
 }
 
-details[open] summary::after {
-  transform: rotate(180deg);
+.trialContainer > header > div >span{
+  font-weight: lighter;
+  color: lightgray;
 }
 
-summary:hover{
-  color: orange;
-}
 
-.faqs{
-  margin-top: 40px;
-  height: 100%;
+.formContainer{
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
   display: flex;
-  justify-content: space-around;
-flex-direction: column;
+  flex-direction: column;
+gap: 20px;
+}
+
+.formContainer > div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formContainer > div > p{
+  color: red;
+  text-align: end;
+  font-size: .8rem;
+
+}
+
+.formContainer > div > input{
+  border:1px solid lightgray;
+  width: 100%;
+  text-indent: 20px;
+  height: 50px;
+border-radius: 10px;
+}
+
+
+
+
+
+.formContainer > div > input::placeholder{
+  font-weight: bold;
+}
+
+.formContainer > button{
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .9rem;
+  background:hsl(154, 59%, 51%) ;
+  transition: .5s;
+}
+
+.formContainer > button:hover{
+  transform: scale(1.02);
+}
+
+
+.termsAndServices{
+  color: gray;
+  font-size: .6rem;
+}
+
+.termsAndServices > a{
+  text-decoration: none;
+  color: var(--background);
+  font-weight: 500;
 }
 
 .attribution{
@@ -115,58 +150,35 @@ flex-direction: column;
   right: 0;
   margin: auto;
   font-weight: 700;
-  color: white;
+  color: black;
 }
 .attribution *{
   margin: auto 5px;
 }
 
 .attribution a{
-  color: red;
+  color: rgb(38, 0, 255);
   font-weight:900;
   text-decoration: none;
 }
 
 
 @media (max-width:768px) {
-  .cardContent{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 
-  .leftContainer{
-    overflow: visible;
-  }
+.pageContent {
+  width: 90%;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
 
-  .leftContainer > img {
-width: 300px;
-top: -150px;
-content: url('../assets/illustration-woman-online-mobile.svg');
-margin: auto;
-left: 0;
-right: 0;
-  }
 
-.title{
+.pageInfo > h1{ 
   margin: auto;
 }
 
-  .faqContainer{
-    height: 500px;
-    overflow: scroll;
-    width: 90%;
-    margin: auto;
-    align-content: center;
-    align-items: center;
-  }
-
-  .faqContainer::-webkit-scrollbar{
-    width: 0;
-  }
-
-
-  .boxWrapper > img{
-    display: none;
-  }
+ .attribution{
+   display: none;
+   visibility: collapse;
+ }
 }

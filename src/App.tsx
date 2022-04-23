@@ -1,79 +1,151 @@
+import backgroundImg from "./assets/bg-intro-desktop.png";
+import { useState } from "react";
 import styles from "./styles/App.module.css";
-const ilustration =
-  require("./assets/illustration-woman-online-desktop.svg").default;
-
-const ilustrationBox = require("./assets/illustration-box-desktop.svg").default;
-const cardBG = require("./assets/bg-pattern-desktop.svg").default;
 
 function App() {
+  const [allowSubmit, setSubmit] = useState(true);
+  const [firstname, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const {
     container,
-    card,
-    leftContainer,
-    boxWrapper,
-    cardContent,
-    faqs,
-    faqContainer,
-    title,
+    backgroundContainer,
+    pageContent,
+    pageInfo,
+    trialContainer,
+    formContainer,
+    termsAndServices,
     attribution,
   } = styles;
+
+  const trySubmit = () => {
+    setSubmit(
+      firstname !== "" && lastName !== "" && email !== "" && password !== ""
+    );
+  };
   return (
     <>
       <main className={container}>
-        <div className={card}>
-          <div className={boxWrapper}>
-            <img src={ilustrationBox} alt="ilustration" />
-            <div className={cardContent}>
-              <div className={leftContainer}>
-                <img src={cardBG} alt="background" />
-                <img src={ilustration} alt="ilustration" />
+        <div className={backgroundContainer}>
+          <img src={backgroundImg} alt="background" />
+        </div>
+        <div className={pageContent}>
+          <div className={pageInfo}>
+            <h1>Learn to code by watching others</h1>
+            <p>
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </p>
+          </div>
+          <div className={trialContainer}>
+            <header>
+              <div>
+                Try it free 7 days <span>then $20/mo. thereafter</span>
               </div>
-              <div className={faqContainer}>
-                <h1 className={title}>FAQ</h1>
-                <div className={faqs}>
-                  <details>
-                    <summary>How many team members can I invite?</summary>
-                    <div>
-                      {" "}
-                      You can invite up to 2 additional users on the Free plan.
-                      There is no limit on team members for the Premium plan.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>What is the maximum file upload size?</summary>
-                    <div>
-                      {" "}
-                      No more than 2GB. All files in your account must fit your
-                      allotted storage space.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>How do I reset my password?</summary>
-                    <div>
-                      {" "}
-                      Click “Forgot password” from the login page or “Change
-                      password” from your profile page. A reset link will be
-                      emailed to you.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Can I cancel my subscription?</summary>
-                    <div>
-                      {" "}
-                      Yes! Send us a message and we’ll process your request no
-                      questions asked.
-                    </div>
-                  </details>
-                  <details>
-                    <summary>Do you provide additional support?</summary>
-                    <div>
-                      {" "}
-                      Chat and email support is available 24/7. Phone lines are
-                      open during normal business hours.
-                    </div>
-                  </details>
-                </div>
+            </header>
+
+            <div className={formContainer}>
+              <div>
+                <input
+                  style={
+                    firstname || allowSubmit
+                      ? { border: "1px solid lightgray" }
+                      : { border: "2px solid red" }
+                  }
+                  value={firstname}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  type="text"
+                  required
+                  placeholder="First Name"
+                />
+                <p
+                  style={
+                    firstname || allowSubmit
+                      ? { visibility: "hidden" }
+                      : { visibility: "visible" }
+                  }
+                >
+                  First Name cannot be empty
+                </p>
               </div>
+              <div>
+                <input
+                  style={
+                    lastName || allowSubmit
+                      ? { border: "1px solid lightgray" }
+                      : { border: "2px solid red" }
+                  }
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  type="text"
+                  required
+                  placeholder="Last Name"
+                />
+                <p
+                  style={
+                    lastName || allowSubmit
+                      ? { visibility: "hidden" }
+                      : { visibility: "visible" }
+                  }
+                >
+                  Last Name Cannot be empty
+                </p>
+              </div>
+              <div>
+                <input
+                  style={
+                    email || allowSubmit
+                      ? { border: "1px solid lightgray" }
+                      : { border: "2px solid red" }
+                  }
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  required
+                  placeholder="Email Address"
+                />
+                <p
+                  style={
+                    email || allowSubmit
+                      ? { visibility: "hidden" }
+                      : { visibility: "visible" }
+                  }
+                >
+                  Email Cannot be empty
+                </p>
+              </div>
+
+              <div>
+                <input
+                  style={
+                    password || allowSubmit
+                      ? { border: "1px solid lightgray" }
+                      : { border: "2px solid red" }
+                  }
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  type="password"
+                  required
+                  placeholder="Password"
+                />
+                <p
+                  style={
+                    password || allowSubmit
+                      ? { visibility: "hidden" }
+                      : { visibility: "visible" }
+                  }
+                >
+                  Password Cannot be empty
+                </p>
+              </div>
+              <button onClick={() => trySubmit()}>Claim yout free Trial</button>
+              <p className={termsAndServices}>
+                By clicking the button, you are agreeing to our{" "}
+                <a href="/">Terms and Services</a>
+              </p>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
-# FAQ
+# Sign Up Form
 
 # ![preview](./src/assets/screenshot.png)
 
 Just a quick challenge made for Frontend Mentor.
 
-> Check it out: [https://FlashCodX.github.io/faq-app/](https://FlashCodX.github.io/faq-app/)
+> Check it out: [https://FlashCodX.github.io/sign-up-form/](https://FlashCodX.github.io/sign-up-form/)
 
 ## Tech
 
