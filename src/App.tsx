@@ -154,7 +154,7 @@ function App() {
       <footer className={attribution}>
         Challenge by{" "}
         <a
-          href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam"
+          href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"
           target="_blank"
           rel="noreferrer"
         >
