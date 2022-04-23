@@ -2,7 +2,7 @@
 
 # ![preview](./src/assets/screenshot.png)
 
-Just a quick challenge made for Frontend Mentor.
+Achallenge made for Frontend Mentor.
 
 > Check it out: [https://FlashCodX.github.io/sign-up-form/](https://FlashCodX.github.io/sign-up-form/)
 
