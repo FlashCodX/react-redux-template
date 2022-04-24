@@ -1,10 +1,10 @@
-# Sign Up Form
+# Ping coming soon
 
 # ![preview](./src/assets/screenshot.png)
 
-Achallenge made for Frontend Mentor.
+A challenge made for Frontend Mentor.
 
-> Check it out: [https://FlashCodX.github.io/sign-up-form/](https://FlashCodX.github.io/sign-up-form/)
+> Check it out: [https://FlashCodX.github.io/ping-coming-soon/](https://FlashCodX.github.io/ping-coming-soon/)
 
 ## Tech
 

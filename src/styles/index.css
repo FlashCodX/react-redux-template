@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap');
 
 :root{
-  --background:hsl(0, 100%, 74%) ;
+  --background:white ;
   --header-background:hsl(249, 10%, 26%)
 }
 
 body {
+  position: relative;
   background: var(--background);
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
