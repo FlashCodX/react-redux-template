@@ -2,7 +2,7 @@
 
 <!-- # ![preview](./src/assets/screenshot.png) -->
 
-# A react JS template with css resets, and file structure.
+A react JS template with css resets, and file structure.
 
 Clone and install all needed dependencies.
 
