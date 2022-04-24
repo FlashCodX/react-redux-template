@@ -3,6 +3,9 @@
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
+  justify-content: center;
+  font-weight: bold;
+  background: rgb(236, 236, 236);
 }
 
 
