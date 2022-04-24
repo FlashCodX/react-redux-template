@@ -1,13 +1,13 @@
-import styles from "./styles/App.module.css";
+import styles from "../styles/App.module.css";
 
 function App() {
   const { container, attribution } = styles;
 
   return (
     <>
-      <main className={container}></main>
+      <main className={container}>CONTENT HERE</main>
 
-      <footer className={attribution}>
+      {/* <footer className={attribution}>
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"
@@ -25,7 +25,7 @@ function App() {
           Luís Pinto
         </a>
         .
-      </footer>
+      </footer> */}
     </>
   );
 }

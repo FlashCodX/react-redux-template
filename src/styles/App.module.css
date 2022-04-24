@@ -1,85 +1,10 @@
 .container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  min-height: 100vh;
   text-align: center;
-  max-width: 700px;
-  margin: auto;
-  padding: 100px 0;
+  min-height: 100vh;
 }
 
-.heading{
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-
-.heading > h1{
-  font-weight: normal;
-  font-size: 2.3rem;
-  color: gray;
-}
-
-.heading > h1 > span{
-  font-weight: bold;
-  color: black;
-}
-
-.heading > p{
-  font-size: 1.2rem;
-}
-
-.formContainer{
-display: flex;
-width: 100%;
-gap: 10px;
-}
-
-.inputContainer{
-  display: flex;
-  width: 100%;
-  gap: 10px;
-  flex-direction: column;
-}
-
-.inputContainer > input{
-  height: 60px;
-  border: 2px solid lightgray;
-  text-indent: 20px;
-  border-radius: 30px;
-  outline: none;
-}
-
-.inputContainer > input::placeholder{
-  color: lightgray;
-}
-
-.inputContainer > p{
-  color: red;
-  visibility: hidden;
-  text-indent: 20px;
-  text-align: start;
-  font-size: .8rem;
-}
-
-.formContainer > button{
-  cursor: pointer;
-min-width: 250px;
-color: white;
-border-radius: 50px;
-border: none;
-font-size: 1rem;
-height: 60px;
-background: hsl(223, 87%, 63%);
-}
-
-.formContainer > button:hover{
-  background: hsl(223, 100%, 88%);
-}
 
 .attribution{
   position: absolute;
@@ -94,37 +19,8 @@ background: hsl(223, 87%, 63%);
   color: black;
 }
 
-.illustrationStyle{
-  width: 100%;
-}
-
-.socials{
-  display: flex;
-  gap: 10px;
-}
-
-.socials > div{
-  cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, .1);
-  width: 30px;
-  color: hsl(223, 87%, 63%);
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: white;
-}
-.socials > div:hover{
-  color: white;
-  background: hsl(223, 87%, 63%);
-}
 
 
-.copyright{
-  margin-top: 10px;
-  color: gray;
-}
 .attribution *{
   margin: auto 5px;
 }
@@ -138,14 +34,7 @@ background: hsl(223, 87%, 63%);
 
 @media (max-width:768px) {
 
-  .container{
-    width: 90%;
-  }
-
-  .formContainer{
-    gap: 0;
-    flex-direction: column;
-  }
+  
 
  .attribution{
    display: none;

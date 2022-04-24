@@ -2,6 +2,8 @@
 
 <!-- # ![preview](./src/assets/screenshot.png) -->
 
+# A react JS template with css resets, and file structure.
+
 Clone and install all needed dependencies.
 
 ```sh
@@ -11,9 +13,9 @@ $ npm install
 $ npm start
 ```
 
-A challenge made for Frontend Mentor.
+<!-- A challenge made for Frontend Mentor. -->
 
-> Check it out: [https://FlashCodX.github.io/ping-coming-soon/](https://FlashCodX.github.io/ping-coming-soon/)
+<!-- > Check it out: [https://FlashCodX.github.io/ping-coming-soon/](https://FlashCodX.github.io/ping-coming-soon/) -->
 
 ## Tech
 
