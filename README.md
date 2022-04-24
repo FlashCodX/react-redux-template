@@ -1,6 +1,15 @@
-# Ping coming soon
+# APP NAME
 
-# ![preview](./src/assets/screenshot.png)
+<!-- # ![preview](./src/assets/screenshot.png) -->
+
+Clone and install all needed dependencies.
+
+```sh
+$ git clone https://github.com/FlashCodX/react-template
+$ cd react-template
+$ npm install
+$ npm start
+```
 
 A challenge made for Frontend Mentor.
 
