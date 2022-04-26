@@ -1,6 +1,6 @@
 # React Redux Template
 
-A React template with css resets, redux state management, and file structure.
+A React template with typescript, css resets, redux state management, and best practice file structure.
 
 Clone and install all needed dependencies.
 
