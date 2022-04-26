@@ -1,6 +1,6 @@
 {
-  "homepage": "https://FlashCodX.github.io/social-media-dashboard/",
-  "name": "socialmediadashboard",
+  "homepage": "https://FlashCodX.github.io/react-redux-template/",
+  "name": "react-redux-template",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
