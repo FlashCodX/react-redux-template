@@ -1,13 +1,50 @@
 .container{
+  padding: 50px 20px;
   display: flex;
+  gap: 40px;
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
-  justify-content: center;
-  font-weight: bold;
-  background: rgb(236, 236, 236);
+  max-width: 1300px;
+  margin: auto;
 }
 
+.heading{
+  margin-top: 40px;
+  text-align:start ;
+  font-size: .9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading > .title{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: start;
+}
+
+.title h1{
+  font-weight: 600;
+}
+
+.cardsContainer{
+  display: grid;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: repeat(4,1fr);
+}
+
+
+
+.dark{
+  background: var(--dark-bg) !important;
+}
+
+.light{
+  background: var(--light-bg) !important;
+}
 
 .attribution{
   position: absolute;
@@ -23,7 +60,6 @@
 }
 
 
-
 .attribution *{
   margin: auto 5px;
 }
@@ -36,6 +72,24 @@
 
 
 @media (max-width:768px) {
+
+  .heading{
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+  }
+
+
+  .cardsContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardsContainer > *{
+    margin: auto;
+    max-width:80%;
+  }
 
   
 

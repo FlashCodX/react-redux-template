@@ -1,26 +1,15 @@
-# APP NAME
+# React Redux Template
 
-<!-- # ![preview](./src/assets/screenshot.png) -->
-
-A react JS template with css resets, and file structure.
+A React template with css resets, redux state management, and file structure.
 
 Clone and install all needed dependencies.
 
 ```sh
-$ git clone https://github.com/FlashCodX/react-template
-$ cd react-template
+$ git clone https://github.com/FlashCodX/react-redux-template
+$ cd react-redux-template
 $ npm install
 $ npm start
 ```
-
-<!-- A challenge made for Frontend Mentor. -->
-
-<!-- > Check it out: [https://FlashCodX.github.io/ping-coming-soon/](https://FlashCodX.github.io/ping-coming-soon/) -->
-
-## Tech
-
-- [React] - HTML enhanced for web apps!
-- [CSS Modules] - Used to prevent class overlap.
 
 ## License
 

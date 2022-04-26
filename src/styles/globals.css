@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+:root{
+  /* DARK THEME */
+  --dark-bg: hsl(230, 17%, 14%);
+  --dark-top-bg:hsl(232, 19%, 15%);
+  --dark-desaturated-blue:hsl(228, 28%, 20%);
+  --desaturated-blue:hsl(228, 34%, 66%);
+  --white:hsl(0, 0%, 100%);
+
+
+  /* LIGHT THEME */
+  --light-bg:hsl(0, 0%, 100%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --light-grayish-blue:hsl(227, 47%, 96%);
+  --dark-grayish-blue:hsl(228, 12%, 44%);
+  --very-dark-blue:hsl(230, 17%, 14%);
+}
+body {
+  position: relative;
+  background: var(--dark-bg) ;
+  color: var(--light-bg);
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.text-dark{
+  color: black !important ;
+}
+
+.text-light{
+  color: white !important;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-dark{
+  background: var(--dark-desaturated-blue) !important ;
+}
+
+.bg-light{
+  background:hsl(225, 100%, 98%) !important;
+}
+
+
